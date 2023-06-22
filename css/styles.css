@@ -1,0 +1,68 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(#200916,#10001f );
+    height: 1100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    z-index: 111;
+}
+nav a {
+    color: white !important;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.main{
+    position: relative;
+    height: 100vh;
+    margin-bottom: 100px;
+    overflow: hidden;
+    /* transition: 1s; */
+
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transition: .2s;
+}
+.main .moon{
+    mix-blend-mode:screen;
+}
+.main h2{
+    display: flex;
+    justify-content: center;
+    transform: translateY(160px);
+    font-weight: bold;
+    font-size: 20px;
+color: whitesmoke ;
+text-transform: uppercase;
+letter-spacing: 5px;
+width: 100%;
+transition: .2s;
+}
+
+
+.main::after{
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 100px;
+    bottom: -50px;
+    background: linear-gradient(to top, #200916 , transparent);
+    overflow: hidden;
+}
+.bot{
+    padding: 30px;
+    position: relative;
+    z-index: 1111;
+    color: white;
+}
